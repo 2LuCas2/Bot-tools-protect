@@ -7,7 +7,7 @@ module.exports = (bot) => {
             let pull = require(`../commands/${dirs}/${file}`);
             bot.commands.set(pull.config.name, pull);
             if(pull.config.aliases) pull.config.aliases.forEach(a => bot.aliases.set(a, pull.config.name));
-            console.log(`Command | ${pull.config.name} has loaded`)
+            console.log(`Command | ${pull.config.name} vient de charger`)
         }
     };
     ["owner","user", "antiraid", "game"].forEach(x => load(x));
