@@ -7,7 +7,7 @@ module.exports = (bot) => {
             const evt = require(`../events/${dirs}/${file}`);
             let eName = file.split(`.`)[0];
             bot.on(eName, evt.bind(null, bot));
-            console.log(`Event | ${eName} has loaded.`)
+            console.log(`Event | ${eName} vient de charger.`)
         }
     };
     ["client", "guild"].forEach(x => load(x));
