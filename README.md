@@ -17,10 +17,10 @@ discord.js
 # Installer les dépendances
 ```bash
 npm install
-
-list des dépendance:
 ```
-# Liste des commandes
+# Nombres de commandes: 10
+
+
 
 
 
