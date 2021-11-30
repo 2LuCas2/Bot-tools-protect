@@ -1,2 +1,8 @@
-# Bot-random
-Bot Discord V12 en javascript
+                        Voici Mon Bot Discord
+                        
+                        
+```bash
+# Installer les dépendances
+
+npm install
+```
