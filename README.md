@@ -6,15 +6,23 @@ Ce bot aura plein de commandes qui seront ajouter de temps en temps
 
 Node JS Version 16
 
-Discord.js V12            
+Discord.js V12   
+
+quick.db
+
+fs
+
+discord.js
 
 # Installer les dépendances
 ```bash
 npm install
+
+list des dépendance:
 ```
 # Liste des commandes
 
-aucune
+
 
 
 * Si vous avez un problème ajouter 𝙻uᙅas_#0003 ou ☆ Smaug_#4839
