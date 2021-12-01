@@ -1,4 +1,4 @@
-const config = require("../../config.json")
+const whitelist = require("../../whitelist.json")
 module.exports = {
     config: {
         name: 'setname',
@@ -6,7 +6,8 @@ module.exports = {
         },
 
     run: async(client, message, args) => {   
-        if(message.author.id !== config.idowner) return;  
+          if(message.author.id !== whitelist.id && message.author.id !== whitelist.id2 && message.author.id !== whitelist.id3 && message.author.id !== whitelist.id4 && message.author.id !== whitelist.id5 && message.author.id !== whitelist.id6 && message.author.id !== whitelist.id7 && message.author.id !== whitelist.id8 && message.author.id !== whitelist.id9) return;  
+ 
         if (args.length) {
             let str_content = args.join(" ")
             client.user.setUsername(str_content)
