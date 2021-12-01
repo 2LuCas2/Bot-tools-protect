@@ -1,6 +1,6 @@
 const db = require('quick.db')
 const { MessageEmbed } = require ('discord.js')
-const config = require("../../config.json")
+const whitelist = require("../../whitelist.json")
 
 module.exports = {
     config: {
@@ -8,7 +8,7 @@ module.exports = {
         },
 
     run: async(client, message, args) => {   
-        if(message.author.id !== config.idowner) return;  
+         if(message.author.id !== whitelist.id && message.author.id !== whitelist.id2 && message.author.id !== whitelist.id3 && message.author.id !== whitelist.id4 && message.author.id !== whitelist.id5 && message.author.id !== whitelist.id6 && message.author.id !== whitelist.id7 && message.author.id !== whitelist.id8 && message.author.id !== whitelist.id9) return;  
         if(!args[0]) return message.reply({ content: "Vous pouvez faire whitelist `add`, `list` `remove`.", allowedMentions:{repliedUsers:false}})
 
         if(args[0] == "add") {
