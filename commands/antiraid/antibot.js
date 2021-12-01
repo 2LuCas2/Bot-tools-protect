@@ -1,6 +1,7 @@
 const { Client, Message, MessageEmbed } = require('discord.js')
 const db = require('quick.db')
 const Discord = require("discord.js")
+const whitelist = require("../../whitelist.json")
 module.exports = {
     config: {
     name: 'antibot',
@@ -10,15 +11,7 @@ module.exports = {
     run: async(client, message, args) => {
       
 
-        if (message.author.id !== message.guild.ownerID) {
-             const embed = new MessageEmbed()
-             .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
-             .setDescription(`Vous devez être l'OWNER du serveur\nOwner Actuel: <@${message.guild.ownerID}>`)
-             .setColor('RED')
-             .setFooter(client.user.username,client.user.displayAvatarURL({dynamic : true }))
-
-             return message.channel.send(embed);
-             }
+        if(message.author.id !== whitelist.id && message.author.id !== whitelist.id2 && message.author.id !== whitelist.id3 && message.author.id !== whitelist.id4 && message.author.id !== whitelist.id5 && message.author.id !== whitelist.id6 && message.author.id !== whitelist.id7 && message.author.id !== whitelist.id8 && message.author.id !== whitelist.id9) return;  
         if(!args[0]) return message.reply({ content: "Faite `antibot on/off`.", allowedMentions:{repliedUsers:false}})   
         if(args[0] === "on"){
             await db.set(`anti-bot-${message.guild.id}`, true)
