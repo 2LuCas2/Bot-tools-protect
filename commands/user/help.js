@@ -16,9 +16,9 @@ config: {
 
             { name: `💰・jeu (1)`, value: '`ppc`',} ,
 
-            { name: `🏠・Utilitaire (5)`, value: '`help`, `speed`, `banlist`, `botlist`, `adminlist`, `suggest`'},
+            { name: `🏠・Utilitaire (6)`, value: '`help`, `speed`, `banlist`, `botlist`, `adminlist`, `suggest`'},
 
-            { name: `👑・owner (3)`, value: '`whitelist`, `setname`, `setavatar`, `set-suggestion`'},
+            { name: `👑・owner (4)`, value: '`whitelist`, `setname`, `setavatar`, `set-suggestion`'},
         )
         .setTimestamp()
         .setThumbnail(bot.user.displayAvatarURL())
