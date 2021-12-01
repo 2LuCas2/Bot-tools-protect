@@ -1,19 +1,13 @@
 const db = require("quick.db")
 const {Client, Message, MessageEmbed } = require('discord.js')
+const whitelist = require("../../whitelist.json")
 module.exports = {
     config: {
         name: "setwelcome-on"
     },
     run: async (bot, message, args,client) => {   
-        if (message.author.id !== message.guild.ownerID) {
-            const embed = new MessageEmbed()
-            .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
-            .setDescription(`Vous devez être l'OWNER du serveur\nOwner Actuel: <@${message.guild.ownerID}>`)
-            .setColor('RED')
-            .setFooter(client.user.username,client.user.displayAvatarURL({dynamic : true }))
+      if(message.author.id !== whitelist.id && message.author.id !== whitelist.id2 && message.author.id !== whitelist.id3 && message.author.id !== whitelist.id4 && message.author.id !== whitelist.id5 && message.author.id !== whitelist.id6 && message.author.id !== whitelist.id7 && message.author.id !== whitelist.id8 && message.author.id !== whitelist.id9) return;  
 
-            return message.channel.send(embed);
-            }
         if(message.member.hasPermission('ADMINISTRATOR')){
 
     if (!args[0]) {
