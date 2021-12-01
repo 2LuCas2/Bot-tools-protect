@@ -18,7 +18,7 @@ discord.js
 ```bash
 npm install
 ```
-# Nombres de commandes: 10
+# Nombres de commandes: 15
 
 
 
