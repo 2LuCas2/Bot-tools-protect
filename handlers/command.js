@@ -10,5 +10,5 @@ module.exports = (bot) => {
             console.log(`Command | ${pull.config.name} has loaded`)
         }
     };
-    ["owner","user", "antiraid", "game"].forEach(x => load(x));
+    ["owner","user", "antiraid", "game", "log"].forEach(x => load(x));
 }
