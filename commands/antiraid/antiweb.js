@@ -19,7 +19,7 @@ module.exports = {
 
              return message.channel.send(embed);
              }
-        if(!args[0]) return message.reply({ content: "Utilisation: `anti-web on/off`", allowedMentions:{repliedUsers:false}})
+        if(!args[0]) return message.reply({ content: "Utilisation: `Faite `antibot on/off`.", allowedMentions:{repliedUsers:false}})
         
         if(args[0] === "on"){
             await db.set(`anti-web-${message.guild.id}`, true)
