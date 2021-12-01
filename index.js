@@ -24,6 +24,24 @@ client.on('message', message => {
   });
 
 
+////////////////////////////////////////////////////event antiweb ne pas toucher///////////////////////////////////////////////
+ 
+  client.on('webhookUpdate',async channel => {
+  try {
+    if(db.has(`anti-web-${channel.guild.id}`)=== false) return;
+    const audit = (await channel.guild.fetchAuditLogs()).entries.first();
+  if (audit.action === 'WEBHOOK_CREATE') {
+    (await channel.fetchWebhooks(audit.id)).first().delete();
+    
+
+  }
+}
+         catch (error) {
+          console.log(error)
+
+      }
+  })
+
 //////////////////////////////////////////////////event antibot ne pas toucher/////////////////////////////////////////////////////////
   client.on("guildMemberAdd", async message => {
     try {
