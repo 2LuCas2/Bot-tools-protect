@@ -23,6 +23,19 @@ client.on('message', message => {
     }
   });
 
+//////////////////////////////////////////////////event log/////////////////////////////////////////////////////////
+try {
+                
+} catch {
+
+}
+client.on("guildMemberAdd", async (message, args, member) => {
+    let channel = db.fetch(`setwelcome-on_${message.guild.id}`)
+    if (!channel) return;
+    client.channels.cache.get(channel).send(`${message.user} vient de rejoindre ${message.guild.name}`).catch(() => null)
+var sChannel = message.guild.channels.cache.get(channel)
+    if (!sChannel) return;
+})
 
 ////////////////////////////////////////////////////event antiweb ne pas toucher///////////////////////////////////////////////
  
