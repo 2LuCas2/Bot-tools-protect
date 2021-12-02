@@ -18,7 +18,7 @@ config: {
 
             { name: `💰・jeu (1)`, value: '`ppc`',},
 
-            { name: `🏠・Utilitaire (6)`, value: '`help`, `speed`, `banlist`, `botlist`, `adminlist`, `suggest`'},
+            { name: `🏠・Utilitaire (6)`, value: '`help`, `speed`, `banlist`, `botlist`, `adminlist`, `suggest`, `vocstats`'},
 
             { name: `👑・owner (4)`, value: '`whitelist`, `setname`, `setavatar`, `set-suggestion`'},
         )
