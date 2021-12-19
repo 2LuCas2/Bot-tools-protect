@@ -25,4 +25,4 @@ npm install
 
 
 
-* Si vous avez un problème ajouter 𝙻uᙅas_#0003 ou ☆ Smaug_#4839
+* Si vous avez un problème ajouter 𝙻uᙅas_#7640 ou ☆ Smaug_#4839
